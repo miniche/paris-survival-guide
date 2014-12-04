@@ -1,3 +1,3 @@
 paris_survival_guide_app_homepage:
-    path:     /hello/{name}
+    path:     /
     defaults: { _controller: ParisSurvivalGuideAppBundle:Default:index }
