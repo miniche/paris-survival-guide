@@ -1,13 +1,13 @@
 <?php
 
-namespace GerCrm\AdminBundle\Controller;
+namespace ParisSurvivalGuide\AppBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
 class DefaultController extends Controller
 {
-    public function indexAction()
+    public function indexAction($name)
     {
-        return $this->render('GerCrmAdminBundle:Default:index.html.twig');
+        return $this->render('ParisSurvivalGuideAppBundle:Default:index.html.twig', array('name' => $name));
     }
 }

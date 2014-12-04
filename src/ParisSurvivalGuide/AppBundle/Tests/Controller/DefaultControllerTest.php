@@ -1,6 +1,6 @@
 <?php
 
-namespace GerCrm\AdminBundle\Tests\Controller;
+namespace ParisSurvivalGuide\AppBundle\Tests\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 

@@ -1,4 +1,4 @@
-ger_crm_admin:
-    resource: "@GerCrmAdminBundle/Resources/config/routing.yml"
+paris_survival_guide_app:
+    resource: "@ParisSurvivalGuideAppBundle/Resources/config/routing.yml"
     prefix:   /
 

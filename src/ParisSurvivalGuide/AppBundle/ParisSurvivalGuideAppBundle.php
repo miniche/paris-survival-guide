@@ -1,9 +1,9 @@
 <?php
 
-namespace GerCrm\AdminBundle;
+namespace ParisSurvivalGuide\AppBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
-class GerCrmAdminBundle extends Bundle
+class ParisSurvivalGuideAppBundle extends Bundle
 {
 }

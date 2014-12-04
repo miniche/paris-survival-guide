@@ -1,4 +1,4 @@
 services:
-#    ger_crm_admin.example:
-#        class: GerCrm\AdminBundle\Example
+#    paris_survival_guide_app.example:
+#        class: ParisSurvivalGuide\AppBundle\Example
 #        arguments: [@service_id, "plain_value", %parameter%]
