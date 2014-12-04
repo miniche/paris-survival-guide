@@ -1,0 +1,3 @@
+ger_crm_admin_homepage:
+    path:     /
+    defaults: { _controller: GerCrmAdminBundle:Default:index }

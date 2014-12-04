@@ -1,0 +1,4 @@
+services:
+#    ger_crm_admin.example:
+#        class: GerCrm\AdminBundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]

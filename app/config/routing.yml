@@ -1,0 +1,4 @@
+ger_crm_admin:
+    resource: "@GerCrmAdminBundle/Resources/config/routing.yml"
+    prefix:   /
+
