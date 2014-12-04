@@ -1,3 +1,0 @@
-ger_crm_api_contact_add:
-    path:     /
-    defaults: { _controller: GerCrmAdminBundle:Default:index }
