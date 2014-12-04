@@ -3,7 +3,7 @@ parameters:
     database_driver: pdo_mysql
     database_host: 127.0.0.1
     database_port: 3306
-    database_name: ger-crm
+    database_name: paris-survival-guide
     database_user: root
     database_password: root
     mailer_transport: smtp
@@ -15,3 +15,5 @@ parameters:
     debug_toolbar: true
     debug_redirects: false
     use_assetic_controller: true
+    catalog_elastic_servers:
+    - { host: 54.93.171.214, port: 9200 }

@@ -1,4 +1,8 @@
 services:
-#    paris_survival_guide_app.example:
-#        class: ParisSurvivalGuide\AppBundle\Example
-#        arguments: [@service_id, "plain_value", %parameter%]
+    paris_survival_guide_app.accidents_import:
+        class: ParisSurvivalGuide\AppBundle\Import\AccidentsCSVImport
+        arguments: [@doctrine.orm.entity_manager]
+
+    paris_survival_guide_app.meteo_import:
+        class: ParisSurvivalGuide\AppBundle\Import\MeteoJsonImport
+        arguments: [@doctrine.orm.entity_manager]

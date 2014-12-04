@@ -51,3 +51,42 @@ swiftmailer:
     username:  "%mailer_user%"
     password:  "%mailer_password%"
     spool:     { type: memory }
+
+
+fos_elastica:
+    clients:
+        default:
+            servers: %catalog_elastic_servers%
+    indexes:
+        paris_survival_guide:
+            index_name: paris_survival_guide
+            types:
+                crashes:
+                    mappings:
+                        id: { type: integer }
+                        dateTime: {  }
+                        arrondissement: { type: string }
+                        meteo: { type: string }
+                        season: { type: string }
+                        address: { type: string }
+                        street1: { type: string }
+                        street2: { type: string }
+                        vehicule1: { type: string }
+                        vehicule1Status: { type: string }
+                        vehicule1Gravity: { type: string }
+                        vehicule2: { type: string }
+                        vehicule2Status: { type: string }
+                        vehicule2Gravity: { type: string }
+                        vehicule3: { type: string }
+                        vehicule3Status: { type: string }
+                        vehicule3Gravity: { type: string }
+                    persistence:
+                        driver: orm
+                        model: ParisSurvivalGuide\AppBundle\Entity\Crash
+                        provider: ~
+                        listener:
+                            # Immediate: false forces ElasticaBundle to listen the postFlush event
+                            # instead of PrePersist and PreUpdate, avoiding a fatal error with Doctrine.
+                            immediate: false
+                            logger: true
+                        finder: ~
