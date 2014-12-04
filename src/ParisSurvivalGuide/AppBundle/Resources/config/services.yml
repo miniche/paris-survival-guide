@@ -6,3 +6,7 @@ services:
     paris_survival_guide_app.meteo_import:
         class: ParisSurvivalGuide\AppBundle\Import\MeteoJsonImport
         arguments: [@doctrine.orm.entity_manager]
+
+    paris_survival_guide_app.accidents_address:
+        class: ParisSurvivalGuide\AppBundle\Import\AccidentsAddress
+        arguments: [@doctrine.orm.entity_manager]

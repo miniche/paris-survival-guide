@@ -30,6 +30,11 @@ class Crash
     /**
      * @ORM\Column(type="string", length=255, nullable=true)
      */
+    protected $coordinates;
+
+    /**
+     * @ORM\Column(type="string", length=255, nullable=true)
+     */
     protected $meteo;
 
     /**
@@ -358,5 +363,23 @@ class Crash
     {
         $this->meteo = $meteo;
     }
+
+    /**
+     * @return mixed
+     */
+    public function getCoordinates()
+    {
+        return $this->coordinates;
+    }
+
+    /**
+     * @param mixed $coordinates
+     */
+    public function setCoordinates($coordinates)
+    {
+        $this->coordinates = $coordinates;
+    }
+
+
 
 }

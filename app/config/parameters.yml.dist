@@ -1,7 +1,7 @@
 # This file is a "template" of what your parameters.yml file should look like
 parameters:
     database_driver:   pdo_mysql
-    database_host:     127.0.0.1
+    database_host:     10.0.73.173
     database_port:     ~
     database_name:     symfony
     database_user:     root
@@ -22,3 +22,6 @@ parameters:
     debug_toolbar:          true
     debug_redirects:        false
     use_assetic_controller: true
+
+    catalog_elastic_servers:
+      - { host: 54.93.171.214, port: 9200 }

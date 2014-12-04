@@ -16,4 +16,6 @@ parameters:
     debug_redirects: false
     use_assetic_controller: true
     catalog_elastic_servers:
-    - { host: 54.93.171.214, port: 9200 }
+        -
+            host: 54.93.171.214
+            port: 9200

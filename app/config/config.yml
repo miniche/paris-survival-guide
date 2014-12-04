@@ -67,6 +67,7 @@ fos_elastica:
                         dateTime: {  }
                         arrondissement: { type: string }
                         meteo: { type: string }
+                        coordinates: { type: string }
                         season: { type: string }
                         address: { type: string }
                         street1: { type: string }
