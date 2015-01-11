@@ -1,7 +1,7 @@
 {
-    "name": "miniche/ger-crm",
+    "name": "miniche/paris-survival-guide",
     "type": "project",
-    "description": "POC for ger-crm",
+    "description": "Backend part for the Paris Survival Guide (Roquette Team - LExpress Hackday)",
     "require": {
         "php": ">=5.3.3",
         "symfony/symfony": "2.5.*",
